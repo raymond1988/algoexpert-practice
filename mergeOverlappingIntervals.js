@@ -8,7 +8,6 @@ let intervals = [
 
 function mergeOverlappingIntervals (intervals) {
   const sortedIntervals = intervals.sort((a, b) => a[0] - b[0])
-
   const mergedIntervals = []
   let currentInterval = sortedIntervals[0]
   mergedIntervals.push(currentInterval)
@@ -26,5 +25,4 @@ function mergeOverlappingIntervals (intervals) {
   }
   return mergedIntervals
 }
-console.log(intervals);
 console.log(mergeOverlappingIntervals(intervals));
