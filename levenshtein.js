@@ -1,4 +1,4 @@
-//needs to be optimized
+//needs to be optimized to save space.
 
 function levenshteinDistance (str1, str2) {
   const edits = []
