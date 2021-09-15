@@ -1,3 +1,5 @@
+//needs to be optimized
+
 function levenshteinDistance (str1, str2) {
   const edits = []
   for (let i = 0; i < str2.length + 1; i++) {
