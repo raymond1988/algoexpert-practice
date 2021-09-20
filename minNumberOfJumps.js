@@ -4,7 +4,7 @@ const minNumberOfJumps = array => {
   let maxReach = array[0]
   let steps = array[0]
   for (let i = 1; i < array.length - 1; i++) {
-    maxReach = Math.max(maxReach, 1 + array[i])
+    maxReach = Math.max(maxReach, i + array[i])
     steps--
     if (steps === 0) {
       jumps++
@@ -14,4 +14,4 @@ const minNumberOfJumps = array => {
   return jumps + 1
 }
 
-console.log(minNumberOfJumps(3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3))
+console.log(minNumberOfJumps([3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3]))
