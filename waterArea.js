@@ -1,3 +1,5 @@
+//O(n) - t & O(n) - s
+
 const waterArea = heights => {
   const maxes = new Array(heights.length).fill(0)
   let leftMax = 0
