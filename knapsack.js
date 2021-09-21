@@ -30,7 +30,7 @@ const knapsackProblem = (items, capacity) => {
 
 const getKnapsackItems = (knapsackValues, items) => {
   const sequence = []
-  let i = knapsackValues - 1
+  let i = knapsackValues.length - 1
   let c = knapsackValues[0].length - 1
   while (i > 0) {
     if (knapsackValues[i][c] === knapsackValues[i - 1][c]) {
