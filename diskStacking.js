@@ -1,3 +1,5 @@
+//O(n^2) - t O(n) - s
+
 const diskStacking = disks => {
   disks.sort((a, b) => a[2] - b[2])
   const heights = disks.map(disk => disks[2])
