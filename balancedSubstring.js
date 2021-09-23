@@ -1,7 +1,7 @@
 //O(n3) t O(n) space
 //first brute force solution
 //(())(
-const longestBalancedSubstring = string => {
+/* const longestBalancedSubstring = string => {
   let maxLength = 0
 
   for (let i = 0; i < string.length; i++) {
@@ -27,7 +27,11 @@ const isBalanced = string => {
     }
   }
   return openParensStack.length === 0
+} */
+
+
+const longestBalancedSubstring = string => {
+    
 }
-/* const longestBalancedSubstring = string => {}
- */
+
 console.log(longestBalancedSubstring('(())('))
