@@ -13,9 +13,10 @@ function groupAnagrams (words) {
       anagrams[sortedWord] = [word]
     }
   }
+  console.log(anagrams);
   return Object.values(anagrams)
 }
 
 console.log(
-  groupAnagrams(['yo', 'act', 'flop', 'tac', 'foo', 'cat', 'oy', 'olfp'])
+  groupAnagrams(['yo', 'act', 'flop', 'tac', 'foo', 'cat', 'oy', 'olfp', 'cinema', 'iceman'])
 )
