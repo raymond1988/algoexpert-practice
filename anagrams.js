@@ -1,3 +1,4 @@
+//O(w * n * log(n)) - t O(wn) - space
 function groupAnagrams (words) {
   // Write your code here.
   const anagrams = {}
