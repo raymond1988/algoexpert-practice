@@ -1,3 +1,4 @@
+//O(n) - t O(n) - s
 const largestRectangleUnderSkyline = buildings => {
   const pillarIndices = []
   let maxArea = 0
