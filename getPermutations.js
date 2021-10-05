@@ -16,4 +16,4 @@ const permutationsHelper = (array, currentPermutation, permutations) => {
   }
 }
 
-console.log(getPermutations([1, 2, 3, 4, 5]))
+console.log(getPermutations([1, 2, 3]))
