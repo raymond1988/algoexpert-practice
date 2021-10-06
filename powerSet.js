@@ -16,7 +16,7 @@ const powerSet = (array, idx = null) => {
   return subsets
 } */
 
-/* const combinations = elements => {
+const combinations = elements => {
   //base case
   if (elements.length === 0) return [[]]
   //get the first element - we're trying to shrink the array
@@ -34,11 +34,11 @@ const powerSet = (array, idx = null) => {
   })
 
   return [...combinationsWithoutFirst, ...combinationsWithFirst]
-} */
+}
 
 
 //O(n*2^n) - t and space
-const powerset = array => {
+/* const powerset = array => {
   const subsets = [[]]
   for (const ele of array) {
     const length = subsets.length
@@ -48,7 +48,7 @@ const powerset = array => {
     }
   }
   return subsets
-}
+} */
 
-console.log(powerset(['a','b','c']))
-//console.log(combinations(['a', 'b', 'c']))
+//console.log(powerset(['a','b','c']))
+console.log(combinations(['a', 'b', 'c']))
