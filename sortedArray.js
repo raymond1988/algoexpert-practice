@@ -1,5 +1,5 @@
 let arr = [-8, 1, 2, 3, 10]
-
+//sorted array squared
 let sortedArraySrd = arr => {
   let sortedArr = new Array(arr.length)
   let sPtr = 0
@@ -22,5 +22,10 @@ let sortedArraySrd = arr => {
 
   return sortedArr
 }
+
+//start from back
+//is the smV > lrgrVal
+//is the smV < lrgrVal 
+//- * - makes positive
 
 console.log(sortedArraySrd(arr))
