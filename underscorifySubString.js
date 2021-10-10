@@ -1,3 +1,4 @@
+//O(n + m) - t and O(n) - s
 const underscorifySubstring = (string, substring) => {
   const locations = collapse(getLocations(string, substring))
   return underscorify(string, locations)
