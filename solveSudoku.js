@@ -29,6 +29,7 @@ const tryDigitsAtPosition = (row, col, board) => {
   for (let digit = 1; digit < 10; digit++) {
     if (isValidAtPosition(digit, row, col, board)) {
       board[row][col] = digit
+      console.log(board);
       if (solvePartialSudoku(row, col + 1, board)) return true
     }
   }
