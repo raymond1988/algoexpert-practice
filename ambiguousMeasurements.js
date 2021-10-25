@@ -29,3 +29,12 @@ const canMeasureInRange = (measuringCups, low, high, memoization) => {
 const createHashableKey = (low, high) => {
   return low.toString() + ':' + high.toString()
 }
+
+const measuringCups = [
+  [200, 210],
+  [450, 465],
+  [800, 850]
+]
+const low = 2100
+const high = 2300
+console.log(ambiguousMeasurements(measuringCups, low, high))
