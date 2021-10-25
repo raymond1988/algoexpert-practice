@@ -18,7 +18,7 @@ const canMeasureInRange = (measuringCups, low, high, memoization) => {
     }
 
     const newLow = Math.max(0, low - cupLow)
-    const newHight = Math.max(0, high, cupHigh)
+    const newHight = Math.max(0, high - cupHigh)
     canMeasure = canMeasureInRange(measuringCups, newLow, newHight, memoization)
     if (canMeasure) break
   }
