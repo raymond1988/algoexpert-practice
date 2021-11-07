@@ -10,7 +10,7 @@ const taskAssignment = (k, tasks) => {
 
     //MUST BE COMPLETED
     const task2SortedIndex = tasks.length - 1 - idx
-    const task2Duration = sortedTasks[task2Duration]
+    const task2Duration = sortedTasks[task2SortedIndex]
     const indicesWithTask2Duration = taskDurationToIndices[task2Duration]
     const task2Index = indicesWithTask2Duration.pop()
 
