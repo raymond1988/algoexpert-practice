@@ -25,10 +25,31 @@ const postOrderTraverse = (tree, array) => {
   return array
 }
 
+const minHeightBst = array => {
+  //the array should be ordered
+  return minHeightBstHelper(array, 0, array.length - 1)
+}
+
 class BST {
   constructor (value) {
     this.value = value
-    this.left = left
-    this.right = right
+    this.left = null
+    this.right = null
+  }
+
+  insert (value) {
+    if (value < this.left) {
+      if (this.left === null) {
+        this.left = new BST(value)
+      } else {
+        this.left.insert(value)
+      }
+    } else {
+      if (this.right === null) {
+        this.right = new BST(value)
+      } else {
+        this.right.insert(value)
+      }
+    }
   }
 }
