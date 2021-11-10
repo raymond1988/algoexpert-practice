@@ -24,3 +24,11 @@ const postOrderTraverse = (tree, array) => {
   }
   return array
 }
+
+class BST {
+  constructor (value) {
+    this.value = value
+    this.left = left
+    this.right = right
+  }
+}
