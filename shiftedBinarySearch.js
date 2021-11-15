@@ -18,7 +18,7 @@ const shiftedBinarySearchHelper = (array, target, left, right) => {
     const rightNum = array[right]
 
     if (target === potentialMatch) {
-      return potentialMatch
+      return middle
     } else if (leftNum <= potentialMatch) {
       if (target < potentialMatch && target >= leftNum) {
         right = middle - 1
