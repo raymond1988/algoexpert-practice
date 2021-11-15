@@ -16,4 +16,8 @@ const searchInSortedMatrix = (matrix, target) => {
   return [-1, -1]
 }
 
-
+/*
+  You're given a two-dimensional array (a matrix) of distinct integers and a
+  target integer. Each row in the matrix is sorted, and each column is also sorted; the
+  matrix doesn't necessarily have the same height and width.
+*/
