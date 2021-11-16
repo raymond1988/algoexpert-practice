@@ -37,3 +37,7 @@ const alteredBinarySearch = (
     }
   }
 }
+
+let arr = [3,5,6,7,8,8,8,8,10]
+
+console.log(searchForRange(arr, 8))
