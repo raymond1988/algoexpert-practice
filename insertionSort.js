@@ -1,3 +1,6 @@
+//Best: O(n) time | O(1) space //if the array was given sorted
+//Avg and worst: O(n^2) - t | O(1) space
+
 const insertionSort = array => {
   for (let i = 1; i < array.length; i++) {
     let j = i
