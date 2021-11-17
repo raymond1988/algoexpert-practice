@@ -34,6 +34,9 @@ const indexEqualsValue = array => {
   }
 } */
 
+//O(log(n)) -t & s
+//space is also log(n) because of recursive function space requirement 
+//through call stacks
 const indexEqualsValueHelper = (array, leftIdx, rightIdx) => {
   if (leftIdx > rightIdx) return -1
 
