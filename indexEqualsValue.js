@@ -35,9 +35,9 @@ const indexEqualsValue = array => {
 } */
 
 //O(log(n)) -t & s
-//space is also log(n) because of recursive function space requirement 
+//space is also log(n) because of recursive function space requirement
 //through call stacks
-const indexEqualsValueHelper = (array, leftIdx, rightIdx) => {
+/* const indexEqualsValueHelper = (array, leftIdx, rightIdx) => {
   if (leftIdx > rightIdx) return -1
 
   const middleIdx = leftIdx + Math.floor((rightIdx - leftIdx) / 2)
@@ -55,6 +55,31 @@ const indexEqualsValueHelper = (array, leftIdx, rightIdx) => {
   } else {
     return indexEqualsValueHelper(array, leftIdx, middleIdx - 1)
   }
+} */
+
+//O(log(n)) - t and O(1) space - iterative solution
+const indexEqualsValueHelper = array => {
+  let leftIdx = 0
+  let rightIdx = array.length - 1
+
+  while (leftIdx <= rightIdx) {
+    const middleIdx = leftIdx + Math.floor((rightIdx - leftIdx) / 2)
+    const middleValue = array[middleIdx]
+
+    if (middleValue < middleIdx) {
+      leftIdx = middleIdx + 1
+    } else if (middleIdx === middleValue && middleIdx === 0) {
+      return middleIdx
+    } else if (
+      middleIdx === middleValue &&
+      array[middleIdx - 1] < middleIdx - 1
+    ) {
+      return middleIdx
+    } else {
+      rightIdx = middleIdx - 1
+    }
+  }
+  return -1
 }
 
 let array = [-5, -3, 0, 3, 4, 5, 9] //sorted array
