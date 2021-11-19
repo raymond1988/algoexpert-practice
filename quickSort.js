@@ -1,6 +1,8 @@
 //best and average - O(nlog(n)) t | O(log(n)) s
 //worst - O(n^2) t and O(log(n)) s
 
+//CREATES LOOP. NEEDS WORK
+
 const quickSort = array => {
   quickSortHelper(array, 0, array.length - 1)
   return array
@@ -9,8 +11,8 @@ const quickSort = array => {
 const quickSortHelper = (array, startIdx, endIdx) => {
   if (startIdx >= endIdx) return
   const pivotIdx = startIdx
-  const leftIdx = startIdx + 1
-  const rightIdx = endIdx
+  let leftIdx = startIdx + 1
+  let rightIdx = endIdx
   while (rightIdx >= leftIdx) {
     if (array[leftIdx] > array[pivotIdx] && array[rightIdx] < array[pivotIdx]) {
       swap(leftIdx, rightIdx, array)
