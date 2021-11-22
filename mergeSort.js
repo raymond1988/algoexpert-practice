@@ -1,5 +1,5 @@
 //best, avg, worst = O(nlog(n)) t & s
-/* 
+
 const mergeSort = array => {
   if (array.length <= 1) return array
   const middleIdx = Math.floor(array.length / 2)
@@ -27,9 +27,9 @@ const mergeSortedArrays = (leftHalf, rightHalf) => {
     sortedArray[k++] = rightHalf[j++]
   }
   return sortedArray
-} */
+}
 
-const mergeSort = array => {
+/* const mergeSort = array => {
   if (array.length <= 1) return array
   const auxiliaryArray = array.slice()
   mergeSortHelper(array, 0, array.length - 1, auxiliaryArray)
@@ -61,7 +61,7 @@ const doMerge = (mainArray, startIdx, middleIdx, endIdx, auxiliaryArray) => {
   while (j <= endIdx) {
     mainArray[k++] = auxiliaryArray[j++]
   }
-}
+} */
 
 console.log(mergeSort([8, 5, 2, 9, 5, 6, 3]))
 
